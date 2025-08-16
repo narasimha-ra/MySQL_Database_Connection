@@ -34,10 +34,10 @@ public class MySQLSelectCommands {
 		while(rs.next()) {
 			
 			int emp_id = rs.getInt("EMPLOYEE_ID");
-			String fname = rs.getString("FIRST_NAME");
-			String lname = rs.getString("LAST_NAME");
+			String first_name = rs.getString("FIRST_NAME");
+			String last_name = rs.getString("LAST_NAME");
 			
-			System.out.println(emp_id+"  "+fname+"   "+lname);
+			System.out.println(emp_id+"  "+first_name+"   "+last_name);
 		}
 		
 		
